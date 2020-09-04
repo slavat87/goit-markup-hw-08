@@ -84,3 +84,9 @@
   line-height: 1.1;
   text-transform: uppercase;
 } */
+
+@media screen and (max-width: 769px) {
+  .features-list .item {
+    width: 50%;
+  }
+}
