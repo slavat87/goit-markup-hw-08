@@ -1,0 +1,40 @@
+.banner {
+  max-width: 1600px;
+  height: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 200px;
+  padding-bottom: 200px;
+
+  text-align: center;
+
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images_studio/Header.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  & .button {
+    margin-bottom: 0;
+    /* відступи від тексту кнопки на банері*/
+    padding: 10px 32px;
+
+    text-align: center;
+  }
+}
+
+.banner-title {
+  margin-top: 0px;
+  margin-bottom: 30px;
+
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.4;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: $second-text-color;
+}

@@ -1,0 +1,14 @@
+.page-header {
+  border-bottom: 1px solid #ececec;
+}
+
+.nav-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  & nav {
+    display: flex;
+    align-items: center;
+  }
+}

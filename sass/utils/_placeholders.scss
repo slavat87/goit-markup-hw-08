@@ -1,0 +1,102 @@
+html {
+  /* Задаємо box-sizing контенту на сторінці */
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+
+  font-family: Roboto;
+  font-weight: normal;
+  letter-spacing: 0.03em;
+  /*колір основного тексту*/
+  color: $primary-text-color;
+
+  /* колір фону */
+  background-color: $second-text-color;
+}
+
+h2 {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1.2;
+  text-align: center;
+}
+
+img {
+  display: block;
+}
+
+.container {
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  /*обводка контейнера*/
+  /*outline: 2px solid tomato;*/
+}
+
+/*-Забирає точки в всіх списках-*/
+ul {
+  list-style: none;
+}
+
+/*-Забирає точки в певних списках-*/
+.list {
+  /*заберає відступи в списках*/
+  padding: 0;
+  margin: 0;
+}
+
+/*-Заберає підкреслення ссилок-*/
+a {
+  text-decoration: none;
+}
+
+/*-button (базовий стиль)-*/
+/* .button { */
+/* перетворення в рядково-блочний ел*/
+/* display: inline-flex;
+  min-width: 200px;
+  height: 50px;
+
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.88;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: $second-text-color;
+
+  background-color: $button-bg-color; */
+/* заокруглення кнопки*/
+/* border-width: 0px;
+  border-radius: 4px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15); */
+/* забирає обводку при натисканні */
+/* outline: none;
+} */
+
+.button {
+  /* перетворення в рядково-блочний ел*/
+  display: inline-flex;
+  min-width: 200px;
+  height: 50px;
+
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.88;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: $second-text-color;
+
+  background: $button-bg-color;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  /* заокруглення кнопки*/
+  border-width: 0px;
+  border-radius: 4px;
+  /* забирає обводку при натисканні */
+  outline: none;
+}

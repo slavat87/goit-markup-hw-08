@@ -1,0 +1,61 @@
+/* ПІДПИСКА */
+.footer .subscription {
+  width: 570px;
+  margin-top: 12px;
+  padding-left: 0;
+  margin-left: 0;
+
+  /*-Кнопка футера-*/
+  & .button {
+    padding: 13px 28px;
+
+    & .icon-send {
+      width: 24px;
+      height: 24px;
+      margin-left: 10px;
+
+      fill: $second-text-color;
+    }
+  }
+}
+
+.email-subscription {
+  display: flex;
+  justify-content: space-between;
+}
+
+.form-subscription input {
+  display: inline-flex;
+  width: 358px;
+  height: 50px;
+  padding: 16px 15px;
+
+  color: $fourth-text-color;
+
+  background: $footer-bg-color;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  outline: none;
+
+  &::placeholder {
+    margin-left: 16px;
+
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.03em;
+    color: $fourth-text-color;
+  }
+}
+
+/*-Кнопка футера-*/
+/* .subscription .button {
+  padding: 13px 28px;
+
+  & .icon-send {
+    width: 24px;
+    height: 24px;
+    margin-left: 10px;
+
+    fill: $second-text-color;
+  }
+} */
