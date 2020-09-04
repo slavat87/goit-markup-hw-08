@@ -100,11 +100,10 @@
     justify-content: space-between;
 
     & .item {
-      max-width: 354px;
-      width: calc(50% - 15px);
+      width: 354px;
+      /*    width: calc(50% - 15px); */
       margin-bottom: 30px;
       margin-right: 0;
-      /* margin: 7.5px; */
     }
   }
 }
@@ -115,11 +114,11 @@
   }
 }
 
-@media screen and (max-width: 1199px) {
-  .features-list .item:not(:last-child (2)) {
+/* @media screen and (max-width: 1199px) {
+  .features-list .item:not(:last-child (-n+2)) {
     margin-bottom: 30px;
   }
-}
+} */
 
 // @media screen and (min-width: 1200px) {
 //   .features-list {
