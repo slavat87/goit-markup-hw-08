@@ -98,15 +98,14 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-  }
 
-  & .item {
-    max-width: 354px;
-    /*  width: calc((100% - 4 * 7.5px) / 2); */
-    /* width: calc(50% - 15px); */
-    margin-bottom: 30px;
-    margin-right: 0;
-    /* margin: 7.5px; */
+    & .item {
+      max-width: 354px;
+      width: calc(50% - 15px);
+      margin-bottom: 30px;
+      margin-right: 0;
+      /* margin: 7.5px; */
+    }
   }
 }
 
