@@ -146,6 +146,7 @@ a {
 }
 
 .page-header {
+  position: relative;
   border-bottom: 1px solid #ececec;
 }
 
@@ -196,6 +197,64 @@ nav {
     transform: translateY(100%);
   }
 } */
+.menu-button {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  width: 40px;
+  height: 40px;
+  border: none;
+  background-color: transparent;
+}
+
+@media screen and (min-width: 768px) {
+  .menu-button {
+    display: none;
+  }
+}
+
+.menu-button .icon-cross {
+  display: none;
+}
+
+.menu-button.is-open .icon-cross {
+  display: block;
+}
+
+.menu-button.is-open .icon-menu {
+  display: none;
+}
+
+@media screen and (max-width: 767px) {
+  .mobile-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: #ffffff;
+    background: #ffffff;
+    -webkit-box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
+    padding: 60px;
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .mobile-menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+.mobile-menu .mobile-menu.is-open {
+  display: block;
+}
+
 /* MENU page-header */
 .site-nav {
   display: -webkit-box;
@@ -295,20 +354,26 @@ nav {
 }
 
 .footer {
-  padding-top: 60px;
-  padding-bottom: 60px;
+  /*   padding-top: 60px;
+  padding-bottom: 60px; */
   background-color: #2f303a;
 }
 
 .footer .footer-general {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  /*   display: flex; */
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding-left: 0;
   margin-left: 0;
+}
+
+@media screen and (min-width: 768px) {
+  .footer .footer-general {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
 }
 
 /*footer logo*/
@@ -415,7 +480,7 @@ strong {
 
 /* ПІДПИСКА */
 .footer .subscription {
-  width: 570px;
+  max-width: 570px;
   margin-top: 12px;
   padding-left: 0;
   margin-left: 0;
