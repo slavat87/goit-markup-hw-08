@@ -170,7 +170,33 @@ a {
           align-items: center;
 }
 
-/* MENU site-nav */
+nav {
+  width: 100%;
+}
+
+.nav-collapse {
+  width: 100%;
+  /*   display: flex;
+  align-items: center;
+  justify-content: space-between; */
+}
+
+/* @media screen and (max-width: 481px) {
+  nav {
+    position: relative;
+  }
+
+  .nav-collapse {
+    background-color: #fff;
+    position: absolute;
+    flex-direction: column;
+    bottom: 0;
+    left: 0;
+    width: 100vw;
+    transform: translateY(100%);
+  }
+} */
+/* MENU page-header */
 .site-nav {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -180,23 +206,6 @@ a {
   font-size: 14px;
   line-height: 1.1;
   letter-spacing: 0.02em;
-}
-
-nav {
-  width: 100%;
-}
-
-.nav-collapse {
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
 }
 
 .site-nav .link {
@@ -231,25 +240,6 @@ nav {
   height: 4px;
   background-color: #2196f3;
   border-radius: 2px;
-}
-
-@media screen and (max-width: 481px) {
-  nav {
-    position: relative;
-  }
-  .nav-collapse {
-    background-color: #fff;
-    position: absolute;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    bottom: 0;
-    left: 0;
-    width: 100vw;
-    -webkit-transform: translateY(100%);
-            transform: translateY(100%);
-  }
 }
 
 /* contact list */
@@ -691,18 +681,6 @@ strong {
   /*background-color: rgba(47, 48, 58, 0.8);*/
 }
 
-@media screen and (min-width: 481px) {
-  .perform {
-    display: none;
-  }
-}
-
-@media screen and (min-width: 769px) {
-  .perform {
-    display: none;
-  }
-}
-
 .perform-list {
   margin-top: 0;
   margin-bottom: 0;
@@ -760,7 +738,7 @@ strong {
   margin-top: 0;
   margin-bottom: 0;
 } */
-@media screen and (max-width: 769px) {
+@media screen and (max-width: 1199px) {
   .perform {
     display: none;
   }
