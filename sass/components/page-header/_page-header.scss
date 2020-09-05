@@ -69,6 +69,10 @@ nav {
 }
 
 .mobile-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
   @media screen and (max-width: 767px) {
     display: none;
     position: absolute;
@@ -83,11 +87,7 @@ nav {
     text-align: center;
   }
 
-  @media screen and (min-width: 768px) {
+  &.is-open {
     display: flex;
-  }
-
-  .mobile-menu.is-open {
-    display: block;
   }
 }

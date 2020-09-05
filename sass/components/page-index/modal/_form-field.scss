@@ -4,9 +4,6 @@
   display: flex;
   flex-direction: column;
   margin-bottom: 10px;
-  margin-right: 32px;
-  margin-left: 32px;
-
   transition-property: border-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -107,4 +104,13 @@
 
 .form-field.comment {
   margin-bottom: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  .form-field {
+    input,
+    textarea {
+      width: 100%;
+    }
+  }
 }

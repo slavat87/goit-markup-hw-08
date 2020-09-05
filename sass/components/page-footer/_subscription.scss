@@ -20,8 +20,13 @@
 }
 
 .email-subscription {
-  display: flex;
+  /*   display: flex; */
   justify-content: space-between;
+
+  @media screen and (max-width: 767px) {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 .form-subscription input {
@@ -44,6 +49,12 @@
     line-height: 1.25;
     letter-spacing: 0.03em;
     color: $fourth-text-color;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .form-subscription input {
+    max-width: 450px;
   }
 }
 

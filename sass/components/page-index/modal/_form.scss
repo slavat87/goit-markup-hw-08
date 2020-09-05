@@ -7,7 +7,7 @@
   width: 528px;
   max-height: 90vh;
   overflow-y: auto;
-  padding: 8px 8px 40px 8px;
+  padding: 32px 32px 40px 32px;
   margin-left: auto;
   margin-right: auto;
 
@@ -35,6 +35,14 @@
     text-align: center;
     letter-spacing: 0.03em;
     color: $primary-text-color;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .form {
+    padding: 15px 15px 40px 15px;
+    width: calc(100% - 30px);
+    max-height: calc(100% - 30px);
   }
 }
 

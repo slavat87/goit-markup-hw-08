@@ -49,3 +49,15 @@
 
   fill: currentColor;
 }
+
+@media screen and (max-width: 1200px) {
+  .contact.list {
+    display: flex;
+    flex-direction: column;
+
+    li {
+      padding-top: 10px;
+      padding-bottom: 10px;
+    }
+  }
+}
