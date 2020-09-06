@@ -10,6 +10,13 @@
   letter-spacing: 0.02em;
 }
 
+@media screen and (max-width: 768px) {
+  .site-nav {
+    // flex-wrap: wrap;
+    flex-direction: column;
+  }
+}
+
 .site-nav .link {
   position: relative;
 
@@ -47,5 +54,11 @@
 
     background-color: $accent-color;
     border-radius: 2px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .site-menu {
+    padding-bottom: 60px;
   }
 }

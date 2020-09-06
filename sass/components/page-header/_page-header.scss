@@ -25,6 +25,13 @@ nav {
   justify-content: space-between; */
 }
 
+@media screen and (max-width: 768px) {
+  .nav-collapse {
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+}
+
 /* @media screen and (max-width: 481px) {
   nav {
     position: relative;
@@ -74,6 +81,7 @@ nav {
   align-items: center;
 
   @media screen and (max-width: 767px) {
+    flex-wrap: wrap;
     display: none;
     position: absolute;
     top: 100%;
@@ -83,11 +91,18 @@ nav {
     background: #ffffff;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08),
       0px 1px 3px rgba(0, 0, 0, 0.16);
-    padding: 60px;
+    padding: 0;
     text-align: center;
   }
 
   &.is-open {
     display: flex;
+
+    @media screen and (max-width: 767px) {
+      padding-top: 60px;
+      padding-bottom: 60px;
+      padding-left: 135px;
+      padding-right: 135px;
+    }
   }
 }

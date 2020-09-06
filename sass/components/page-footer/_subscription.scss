@@ -19,11 +19,19 @@
   }
 }
 
+@media screen and (max-width: 1199px) {
+  .footer .subscription {
+    margin-bottom: 20px;
+    text-align: center;
+    width: 100%;
+  }
+}
+
 .email-subscription {
-  /*   display: flex; */
+  display: flex;
   justify-content: space-between;
 
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 1200px) {
     flex-direction: column;
     align-items: center;
   }
@@ -52,9 +60,12 @@
   }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1200px) {
   .form-subscription input {
     max-width: 450px;
+    height: 50px;
+    padding: 16px 15px;
+    margin-bottom: 20px;
   }
 }
 

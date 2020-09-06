@@ -14,6 +14,11 @@
   &:last-child {
     margin-right: 0px;
   }
+
+  @media screen and (max-width: 1200px) {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
 }
 
 .contact span {
@@ -54,10 +59,11 @@
   .contact.list {
     display: flex;
     flex-direction: column;
+    justify-content: flex-start;
 
     li {
-      padding-top: 10px;
-      padding-bottom: 10px;
+      padding-top: 0;
+      padding-bottom: 0;
     }
   }
 }

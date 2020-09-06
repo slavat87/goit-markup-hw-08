@@ -48,3 +48,10 @@
 .social-link:last-child a {
   margin-right: 0;
 }
+
+@media screen and (max-width: 1199px) {
+  .footer .footer-uppercase {
+    margin-bottom: 60px;
+    text-align: center;
+  }
+}

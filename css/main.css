@@ -60,11 +60,11 @@ h2 {
 
 img {
   display: block;
+  height: auto;
 }
 
 .container {
   /* width: 1200px; */
-  max-width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
@@ -217,6 +217,17 @@ nav {
   justify-content: space-between; */
 }
 
+@media screen and (max-width: 768px) {
+  .nav-collapse {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
 /* @media screen and (max-width: 481px) {
   nav {
     position: relative;
@@ -276,6 +287,8 @@ nav {
 
 @media screen and (max-width: 767px) {
   .mobile-menu {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     display: none;
     position: absolute;
     top: 100%;
@@ -285,7 +298,7 @@ nav {
     background: #ffffff;
     -webkit-box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
             box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
-    padding: 60px;
+    padding: 0;
     text-align: center;
   }
 }
@@ -294,6 +307,15 @@ nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+@media screen and (max-width: 767px) {
+  .mobile-menu.is-open {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    padding-left: 135px;
+    padding-right: 135px;
+  }
 }
 
 /* MENU page-header */
@@ -306,6 +328,15 @@ nav {
   font-size: 14px;
   line-height: 1.1;
   letter-spacing: 0.02em;
+}
+
+@media screen and (max-width: 768px) {
+  .site-nav {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 
 .site-nav .link {
@@ -342,6 +373,12 @@ nav {
   border-radius: 2px;
 }
 
+@media screen and (max-width: 1200px) {
+  .site-menu {
+    padding-bottom: 60px;
+  }
+}
+
 /* contact list */
 .contact {
   display: -webkit-box;
@@ -361,6 +398,13 @@ nav {
 
 .contact li:last-child {
   margin-right: 0px;
+}
+
+@media screen and (max-width: 1200px) {
+  .contact li {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
 }
 
 .contact span {
@@ -403,16 +447,20 @@ nav {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
   }
   .contact.list li {
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-top: 0;
+    padding-bottom: 0;
   }
 }
 
 .footer {
-  /*   padding-top: 60px;
-  padding-bottom: 60px; */
+  width: 100%;
+  padding-top: 60px;
+  padding-bottom: 60px;
   background-color: #2f303a;
 }
 
@@ -442,6 +490,13 @@ nav {
 
 .footer .logo .logo-address {
   margin-bottom: 20px;
+}
+
+@media screen and (max-width: 1199px) {
+  .footer .logo {
+    margin-bottom: 60px;
+    text-align: center;
+  }
 }
 
 /*footer address*/
@@ -536,6 +591,13 @@ strong {
   margin-right: 0;
 }
 
+@media screen and (max-width: 1199px) {
+  .footer .footer-uppercase {
+    margin-bottom: 60px;
+    text-align: center;
+  }
+}
+
 /* ПІДПИСКА */
 .footer .subscription {
   max-width: 570px;
@@ -556,14 +618,24 @@ strong {
   fill: #ffffff;
 }
 
+@media screen and (max-width: 1199px) {
+  .footer .subscription {
+    margin-bottom: 20px;
+    text-align: center;
+    width: 100%;
+  }
+}
+
 .email-subscription {
-  /*   display: flex; */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1200px) {
   .email-subscription {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -621,9 +693,12 @@ strong {
   color: rgba(255, 255, 255, 0.6);
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1200px) {
   .form-subscription input {
     max-width: 450px;
+    height: 50px;
+    padding: 16px 15px;
+    margin-bottom: 20px;
   }
 }
 
@@ -641,7 +716,7 @@ strong {
 } */
 .banner {
   max-width: 1600px;
-  height: 600px;
+  max-height: 600px;
   margin-left: auto;
   margin-right: auto;
   padding-top: 200px;
@@ -659,6 +734,12 @@ strong {
   /* відступи від тексту кнопки на банері*/
   padding: 10px 32px;
   text-align: center;
+}
+
+@media screen and (min-device-pixel-ratio: 2), screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
+  .banner {
+    background-image: url(../../../images/images_studio/Header2x.jpg);
+  }
 }
 
 .banner-title {
@@ -735,31 +816,18 @@ strong {
 }
 
 .features-icon .icon {
-  width: 70px;
-  height: 70px;
+  max-width: 70px;
+  max-height: 70px;
 }
 
-/* .features-icon .icon {
-  width: 70px;
-  height: 70px;
-} */
-/* .features p {
-  margin-top: 0;
-  margin-bottom: 0;
-  color: $third-text-color;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 1.7;
+@media screen and (max-width: 767px) {
+  .features-list {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 
-.features h3 {
-  margin-top: 30px;
-  margin-bottom: 10px;
-  font-weight: bold;
-  font-size: 14px;
-  line-height: 1.1;
-  text-transform: uppercase;
-} */
 @media screen and (max-width: 1200px) {
   .features-list {
     -ms-flex-wrap: wrap;
@@ -771,14 +839,8 @@ strong {
 }
 
 @media screen and (max-width: 767px) {
-  .features-list {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-  .features-list .item {
-    width: auto;
-    max-width: 450px;
+  .features h3 {
+    text-align: center;
   }
 }
 
@@ -865,7 +927,7 @@ strong {
   margin-top: 0;
   margin-bottom: 0;
 } */
-@media screen and (max-width: 1199px) {
+@media screen and (max-width: 1200px) {
   .perform {
     display: none;
   }
@@ -878,6 +940,10 @@ strong {
   text-align: center;
   padding-top: 94px;
   padding-bottom: 64px;
+}
+
+.team img {
+  max-width: 100%;
 }
 
 .team-list {
@@ -908,11 +974,6 @@ strong {
   padding-bottom: 24px;
 }
 
-/* .team-list.social {
-  padding-left: 32px;
-  padding-right: 32px;
-  padding-bottom: 24px;
-} */
 .team-social a {
   /*вирівнює картинку по центру*/
   /* display: flex; */
@@ -988,16 +1049,6 @@ strong {
   fill: currentColor;
 }
 
-@media screen and (max-width: 1200px) {
-  .team-list {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-  }
-  .team-list .item {
-    width: 354px;
-  }
-}
-
 @media screen and (max-width: 767px) {
   .team-list {
     -webkit-box-pack: center;
@@ -1007,6 +1058,16 @@ strong {
   .team-list .item {
     width: auto;
     max-width: 450px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .team-list {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .team-list .item {
+    width: 354px;
   }
 }
 

@@ -217,6 +217,7 @@
             <li class="item">
               <div class="perform-img">
                 <img
+                  srcset="./images/images_studio/laptop_ind.jpg 1x, ./images/images_studio/laptop_ind2x.jpg 2x"
                   src="./images/images_studio/laptop_ind.jpg"
                   alt="Десктопні програми"
                   width="370"
@@ -231,6 +232,7 @@
             <li class="item">
               <div class="perform-img">
                 <img
+                  srcset="./images/images_studio/mobile_ind.jpg 1x, ./images/images_studio/mobile_ind2x.jpg 2x"
                   src="./images/images_studio/mobile_ind.jpg"
                   alt="Мобільні програми"
                   width="370"
@@ -245,6 +247,7 @@
             <li class="item">
               <div class="perform-img">
                 <img
+                  srcset="./images/images_studio/monitor_ind.jpg 1x, ./images/images_studio/monitor_ind2x.jpg 2x"
                   src="./images/images_studio/monitor_ind.jpg"
                   alt="Дизайнерські рішення"
                   width="370"
@@ -266,12 +269,14 @@
 
           <ul class="team-list">
             <li class="item">
-              <img
-                src="./images/images_studio/ProductDesigner.jpg"
-                alt="Product Designer"
-                width="270"
-                height="260"
-              />
+              <picture>
+                  <source srcset="./images/images_studio/ProductDesigner320.jpg 1x, 
+                  ./images/images_studio/ProductDesigner3202x.jpg 2x" media="(max-width: 1200px)">
+                  <img srcset="./images/images_studio/ProductDesigner.jpg 1x, 
+                  ./images/images_studio/ProductDesigner2x.jpg 2x"
+                  src="./images/images_studio/ProductDesigner.jpg" 
+                  alt="Product Designer" />
+              </picture>
               <h3>Ігор Демяненко</h3>
 
               <p>Product Designer</p>
@@ -318,13 +323,13 @@
             </li>
 
             <li class="item">
-              <img
-                src="./images/images_studio/FrontendDeveloper.jpg"
-                alt="Frontend Developer"
-                width="270"
-                height="260"
-              />
-
+              <picture>
+                <source srcset="./images/images_studio/FrontendDeveloper320.jpg 1x, 
+                ./images/images_studio/FrontendDeveloper3202x.jpg 2x" media="(max-width: 1200px)">
+                <img srcset="./images/images_studio/FrontendDeveloper.jpg 1x, 
+                ./images/images_studio/FrontendDeveloper2x.jpg 2x"
+                src="./images/images_studio/FrontendDeveloper.jpg" alt="Frontend Developer" />
+              </picture>
               <h3>Ольга Репіна</h3>
 
               <p>Frontend Developer</p>
@@ -371,13 +376,12 @@
             </li>
 
             <li class="item">
-              <img
-                src="./images/images_studio/Marketing.jpg"
-                alt="Marketing"
-                width="270"
-                height="260"
-              />
-
+              <picture>
+                <source srcset="./images/images_studio/Marketing320.jpg 1x, 
+                                ./images/images_studio/Marketing3202x.jpg 2x" media="(max-width: 1200px)">
+                <img srcset="./images/images_studio/Marketing.jpg 1x, ./images/images_studio/Marketing2x.jpg 2x"
+                src="./images/images_studio/Marketing.jpg" alt="Marketing" />
+              </picture>
               <h3>Ніколай Тарасов</h3>
 
               <p>Marketing</p>
@@ -424,13 +428,12 @@
             </li>
 
             <li class="item">
-              <img
-                src="./images/images_studio/UIDesigner.jpg"
-                alt="UI Designer"
-                width="270"
-                height="260"
-              />
-
+              <picture>
+                <source srcset="./images/images_studio/UIDesigner320.jpg 1x, 
+                                ./images/images_studio/UIDesigner3202x.jpg 2x" media="(max-width: 1200px)">
+                <img srcset="./images/images_studio/UIDesigner.jpg 1x, ./images/images_studio/UIDesigner2x.jpg 2x"
+                src="./images/images_studio/UIDesigner.jpg" alt="UI Designer" />
+              </picture>
               <h3>Михайло Єрмаков</h3>
 
               <p>UI Designer</p>
