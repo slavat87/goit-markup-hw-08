@@ -16,3 +16,11 @@
     }
   }
 }
+
+@media screen and (max-width: 768px) {
+  .footer .footer-general {
+    // margin-bottom: 60px;
+    text-align: center;
+    justify-content: center;
+  }
+}
