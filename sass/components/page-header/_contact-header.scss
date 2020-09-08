@@ -29,6 +29,18 @@
   font-size: 14px;
   line-height: 16px;
   letter-spacing: 0.02em;
+
+  @media screen and (max-width: 1200px) {
+    margin-left: 8px;
+
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.02em;
+  }
+
+  @media screen and (max-width: 1200px) {
+    margin-left: 10px;
+  }
 }
 
 .contact a {
@@ -65,7 +77,10 @@
     li {
       padding-top: 0;
       padding-bottom: 0;
-      // justify-content: center;
+    }
+
+    & li + li {
+      margin-top: 10px;
     }
   }
 }
@@ -76,6 +91,7 @@
 
     li {
       padding-bottom: 16px;
+      justify-content: center;
 
       &:last-child {
         padding-bottom: 0;

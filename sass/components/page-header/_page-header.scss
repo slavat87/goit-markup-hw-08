@@ -23,6 +23,14 @@
   }
 }
 
+@media screen and (max-width: 1200px) {
+  .nav-wrapper .logo {
+    font-size: 24px;
+    line-height: 1.16;
+    letter-spacing: 0.03em;
+  }
+}
+
 .nav-collapse {
   width: 100%;
   // display: flex;
@@ -100,8 +108,9 @@
       padding-top: 60px;
       padding-bottom: 60px;
       flex-direction: column;
-      // padding-left: 135px;
-      // padding-right: 135px;
+      font-size: 18px;
+      line-height: 1.16;
+      letter-spacing: 0.02em;
     }
   }
 }
