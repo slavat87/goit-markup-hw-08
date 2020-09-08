@@ -109,13 +109,14 @@
   .clients-list {
     & a {
       width: 210px;
+      justify-content: center;
     }
   }
 }
 
-@media screen and (max-width: 479px) {
-  .clients-list {
-    flex-direction: column;
-    align-items: center;
-  }
-}
+// @media screen and (max-width: 479px) {
+//   .clients-list {
+//     flex-direction: column;
+//     align-items: center;
+//   }
+// }

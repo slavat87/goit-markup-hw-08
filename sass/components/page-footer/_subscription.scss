@@ -1,6 +1,6 @@
 /* ПІДПИСКА */
 .footer .subscription {
-  max-width: 570px;
+  // max-width: 570px;
   margin-top: 12px;
   padding-left: 0;
   margin-left: 0;
@@ -39,8 +39,8 @@
 
 .form-subscription input {
   display: inline-flex;
-  width: 358px;
-  height: 50px;
+  // width: 358px;
+  min-height: 50px;
   padding: 16px 15px;
 
   color: $fourth-text-color;
@@ -63,7 +63,7 @@
 @media screen and (max-width: 1200px) {
   .form-subscription input {
     max-width: 450px;
-    height: 50px;
+    // height: 50px;
     padding: 16px 15px;
     margin-bottom: 20px;
   }

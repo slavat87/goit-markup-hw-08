@@ -11,9 +11,16 @@
 }
 
 @media screen and (max-width: 768px) {
-  .site-nav {
+  .site-nav li {
     // flex-wrap: wrap;
-    flex-direction: column;
+    // flex-direction: column;
+
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
   }
 }
 
@@ -54,11 +61,5 @@
 
     background-color: $accent-color;
     border-radius: 2px;
-  }
-}
-
-@media screen and (max-width: 1200px) {
-  .site-menu {
-    padding-bottom: 60px;
   }
 }
