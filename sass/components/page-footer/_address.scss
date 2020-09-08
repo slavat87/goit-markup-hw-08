@@ -35,3 +35,9 @@
 strong {
   color: $second-text-color;
 }
+
+@media screen and (max-width: 767px) {
+  .footer-address {
+    width: 100%;
+  }
+}

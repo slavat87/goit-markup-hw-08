@@ -10,7 +10,7 @@
   letter-spacing: 0.02em;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .site-nav {
     // flex-wrap: wrap;
     flex-direction: column;
@@ -19,7 +19,7 @@
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .site-nav li {
     // flex-wrap: wrap;
     // flex-direction: column;
@@ -30,6 +30,12 @@
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
+
+    &:first-child {
+      a {
+        padding-top: 0;
+      }
+    }
   }
 }
 
@@ -50,7 +56,7 @@
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .site-nav .link {
     margin-right: 0;
     padding-top: 32px;

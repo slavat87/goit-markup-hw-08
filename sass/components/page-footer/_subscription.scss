@@ -19,6 +19,10 @@
   }
 }
 
+.form-subscription {
+  width: 100%;
+}
+
 @media screen and (max-width: 1199px) {
   .footer .subscription {
     margin-bottom: 20px;
@@ -39,10 +43,11 @@
 
 .form-subscription input {
   display: inline-flex;
-  // width: 358px;
-  min-height: 50px;
+  max-height: 50px;
+  width: 360px;
+  margin-right: 10px;
   padding: 16px 15px;
-
+  box-sizing: border-box;
   color: $fourth-text-color;
 
   background: $footer-bg-color;
@@ -63,9 +68,16 @@
 @media screen and (max-width: 1200px) {
   .form-subscription input {
     max-width: 450px;
-    // height: 50px;
+    width: 450px;
+    margin-right: 0;
     padding: 16px 15px;
     margin-bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .form-subscription input {
+    width: 100%;
   }
 }
 

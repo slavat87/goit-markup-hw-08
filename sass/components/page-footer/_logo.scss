@@ -15,8 +15,9 @@
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .footer .logo {
+    width: 100%;
     margin-bottom: 60px;
     text-align: center;
     justify-content: center;

@@ -32,7 +32,7 @@
   padding-left: 0;
 
   & .item {
-    width: 270px;
+    width: calc((100% - 30px * 3) / 4);
     margin-bottom: 30px;
 
     &:nth-child(4n) {
@@ -75,7 +75,7 @@
     flex-wrap: wrap;
 
     & .item {
-      width: 354px;
+      width: calc((100% - 30px) / 2);
     }
   }
 }
@@ -83,5 +83,11 @@
 @media screen and (max-width: 767px) {
   .features h3 {
     text-align: center;
+  }
+
+  .features-list {
+    & .item {
+      width: 100%;
+    }
   }
 }

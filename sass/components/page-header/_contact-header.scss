@@ -65,17 +65,21 @@
     li {
       padding-top: 0;
       padding-bottom: 0;
-      justify-content: center;
+      // justify-content: center;
     }
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .contact.list {
     margin-top: 52px;
 
     li {
       padding-bottom: 16px;
+
+      &:last-child {
+        padding-bottom: 0;
+      }
     }
   }
 }
