@@ -11,6 +11,15 @@
 }
 
 @media screen and (max-width: 768px) {
+  .site-nav {
+    // flex-wrap: wrap;
+    flex-direction: column;
+    margin-left: 0;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 768px) {
   .site-nav li {
     // flex-wrap: wrap;
     // flex-direction: column;
@@ -38,6 +47,14 @@
   &:hover,
   &:focus {
     color: $accent-color;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .site-nav .link {
+    margin-right: 0;
+    padding-top: 32px;
+    padding-bottom: 8px;
   }
 }
 
