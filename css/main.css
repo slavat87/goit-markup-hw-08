@@ -730,7 +730,7 @@ strong {
   display: inline-flex;
   max-height: 50px;
   width: 360px;
-  margin-right: 10px;
+  margin-right: 12px;
   padding: 16px 15px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -823,10 +823,19 @@ strong {
   text-align: center;
 }
 
-@media not all, screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
+@media not all, screen and (-webkit-min-device-pixel-ratio: 2) and (max-width: 1200px), screen and (min-resolution: 192dpi) and (max-width: 1200px), screen and (min-resolution: 2dppx) and (max-width: 1200px) {
   .banner {
-    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.8)), to(rgba(47, 48, 58, 0.8))), url(../../../images/images_studio/Header2x.jpg);
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)), url(../../../images/images_studio/Header2x.jpg);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.8)), to(rgba(47, 48, 58, 0.8))), url(../../../images/images_studio/Header480.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)), url(../../../images/images_studio/Header480.jpg);
+    max-height: 400px;
+  }
+}
+
+@media not all, screen and (-webkit-min-device-pixel-ratio: 2) and (max-width: 767px), screen and (min-resolution: 192dpi) and (max-width: 767px), screen and (min-resolution: 2dppx) and (max-width: 767px) {
+  .banner {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.8)), to(rgba(47, 48, 58, 0.8))), url(../../../images/images_studio/Header768.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)), url(../../../images/images_studio/Header768.jpg);
+    max-height: 400px;
   }
 }
 
@@ -1269,10 +1278,6 @@ strong {
   fill: currentColor;
 }
 
-/* .clients h2 {
-  margin-top: 0;
-  margin-bottom: 50px;
-} */
 @media screen and (max-width: 1200px) {
   .clients-list {
     -ms-flex-wrap: wrap;
@@ -1683,11 +1688,12 @@ strong {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.63;
   letter-spacing: 0.03em;
-  /* перетворення в FLEX контейнер(стаютьв оду лінію)*/
 }
 
 .portfolio-nav .item {
@@ -1721,6 +1727,15 @@ strong {
   border-radius: 4px;
 }
 
+@media screen and (max-width: 767px) {
+  .portfolio-nav {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    margin-bottom: 40px;
+  }
+}
+
 .portfolio-nav .item:hover a,
 .portfolio-nav .item:focus a {
   color: #ffffff;
@@ -1745,8 +1760,16 @@ strong {
   padding: 0;
 }
 
+@media screen and (max-width: 767px) {
+  .team-list {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
 .portfolio .item {
-  width: 370px;
+  width: calc((100% - 30px * 2) / 3);
   padding: 0;
   margin-bottom: 30px;
   border: 1px solid #eeeeee;
@@ -1761,8 +1784,22 @@ strong {
   margin-right: 0;
 }
 
+@media screen and (max-width: 1200px) {
+  .portfolio .item {
+    width: calc((100% - 30px) / 2);
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .portfolio .item {
+    width: 100%;
+  }
+}
+
 .portfolio-img {
   position: relative;
+  max-width: 100%;
+  width: 100%;
   overflow: hidden;
 }
 

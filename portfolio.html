@@ -18,41 +18,75 @@
       <div class="container">
         <div class="nav-wrapper">
           <nav>
+            <!--LOGO-->
             <div class="logo">
               <a href="" class="logo-web">
                 Web<span class="logo-studio">Studio</span>
               </a>
             </div>
-            <div class="site-menu">
-              <ul class="site-nav list">
-                <li><a href="./index.html" class="link">Студія</a></li>
-                <li><a href="" class="link current">Портфоліо</a></li>
-                <li><a href="" class="link">Контакти</a></li>
-              </ul>
+            <!--MENU-->
+            <button
+              type="button"
+              class="menu-button"
+              aria-expanded="false"
+              aria-controls="mobile-menu"
+              data-menu-button
+            >
+              <svg
+                width="40"
+                height="40"
+                aria-label="Перемикач мобільного меню"
+              >
+                <use
+                  class="icon-menu"
+                  href="./images/sprite.svg#icon-mobile-menu"
+                ></use>
+                <use
+                  class="icon-cross"
+                  href="./images/sprite.svg#icon-mobile-close"
+                ></use>
+              </svg>
+            </button>
+            <div class="nav-collapse">
+              <div class="mobile-menu" id="mobile-menu" data-menu>
+                <div class="site-menu">
+                  <ul class="site-nav list">
+                    <li>
+                      <a href="./index.html" class="link">Студія</a>
+                    </li>
+                    <li>
+                      <a href="" class="link current">Портфоліо</a>
+                    </li>
+                    <li>
+                      <a href="" class="link">Контакти</a>
+                    </li>
+                  </ul>
+                </div>
+
+                <div>
+                  <ul class="contact list">
+                    <li>
+                      <a href="mailto:info@devstudio.com" class="link">
+                        <svg class="icon-envelope">
+                          <use href="./images/sprite.svg#icon-envelope"></use>
+                        </svg>
+                        <span>info@devstudio.com</span>
+                      </a>
+                    </li>
+
+                    <li>
+                      <a href="tel:+380961111111" class="link">
+                        <svg class="icon-vector">
+                          <use href="./images/sprite.svg#icon-Vector"></use>
+                        </svg>
+                        <span>+38 096 111 11 11</span>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
             </div>
           </nav>
-
-          <div>
-            <ul class="contact list">
-              <li>
-                <a href="mailto:info@devstudio.com" class="link">
-                  <svg class="icon-envelope">
-                    <use href="./images_studio/sprite.svg#icon-envelope"></use>
-                  </svg>
-                  <span>info@devstudio.com</span>
-                </a>
-              </li>
-
-              <li>
-                <a href="tel:+380961111111" class="link">
-                  <svg class="icon-vector">
-                    <use href="./images_studio/sprite.svg#icon-Vector"></use>
-                  </svg>
-                  <span>+38 096 111 11 11</span>
-                </a>
-              </li>
-            </ul>
-          </div>
         </div>
       </div>
     </header>
@@ -86,8 +120,6 @@
                     "
                     src="./images/images_portfolio/technokrak.jpg"
                     alt="Техно"
-                    width="370"
-                    height="294"
                   />
 
                   <p class="portfolio-description">
@@ -371,9 +403,7 @@
               <li class="social-link">
                 <a href="https://www.instagram.com/">
                   <svg class="footer-icon">
-                    <use
-                      href="./images_studio/sprite.svg#icon-instagram1"
-                    ></use>
+                    <use href="./images/sprite.svg#icon-instagram1"></use>
                   </svg>
                 </a>
               </li>
@@ -381,7 +411,7 @@
               <li class="social-link">
                 <a href="https://twitter.com/">
                   <svg class="footer-icon">
-                    <use href="./images_studio/sprite.svg#icon-twitter1"></use>
+                    <use href="./images/sprite.svg#icon-twitter1"></use>
                   </svg>
                 </a>
               </li>
@@ -389,7 +419,7 @@
               <li class="social-link">
                 <a href="https://www.facebook.com/">
                   <svg class="footer-icon">
-                    <use href="./images_studio/sprite.svg#icon-facebook1"></use>
+                    <use href="./images/sprite.svg#icon-facebook1"></use>
                   </svg>
                 </a>
               </li>
@@ -397,7 +427,7 @@
               <li class="social-link">
                 <a href="https://www.linkedin.com/">
                   <svg class="footer-icon">
-                    <use href="./images_studio/sprite.svg#icon-linkedin1"></use>
+                    <use href="./images/sprite.svg#icon-linkedin1"></use>
                   </svg>
                 </a>
               </li>
@@ -420,7 +450,7 @@
                 <button class="button list">
                   Підписатися
                   <svg class="icon-send">
-                    <use href="./images_studio/sprite.svg#icon-icon-send"></use>
+                    <use href="./images/sprite.svg#icon-icon-send"></use>
                   </svg>
                 </button>
               </div>

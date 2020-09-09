@@ -1,5 +1,6 @@
 .portfolio .item {
-  width: 370px;
+  // width: 370px;
+  width: calc((100% - 30px * 2) / 3);
   padding: 0;
   margin-bottom: 30px;
 
@@ -12,5 +13,17 @@
 
   &:nth-child(3n) {
     margin-right: 0;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .portfolio .item {
+    width: calc((100% - 30px) / 2);
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .portfolio .item {
+    width: 100%;
   }
 }

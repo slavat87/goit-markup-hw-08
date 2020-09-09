@@ -28,18 +28,44 @@
 }
 
 @media not all,
-  screen and (-webkit-min-device-pixel-ratio: 2),
-  screen and (min-resolution: 192dpi),
-  screen and (min-resolution: 2dppx) {
+  screen and (min-resolution: 192dpi) and (max-width: 1200px),
+  screen and (min-resolution: 2dppx) and (max-width: 1200px) {
   .banner {
     background-image: linear-gradient(
-        to right,
         rgba(47, 48, 58, 0.8),
         rgba(47, 48, 58, 0.8)
       ),
-      url(../../../images/images_studio/Header2x.jpg);
+      url(../../../images/images_studio/Header480.jpg);
+    max-height: 400px;
   }
 }
+
+@media not all,
+  screen and (min-resolution: 192dpi) and (max-width: 767px),
+  screen and (min-resolution: 2dppx) and (max-width: 767px) {
+  .banner {
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.8),
+        rgba(47, 48, 58, 0.8)
+      ),
+      url(../../../images/images_studio/Header768.jpg);
+    max-height: 400px;
+  }
+}
+
+// @media not all,
+//   screen and (-webkit-min-device-pixel-ratio: 2),
+//   screen and (min-resolution: 192dpi),
+//   screen and (min-resolution: 2dppx) {
+//   .banner {
+//     background-image: linear-gradient(
+//         to right,
+//         rgba(47, 48, 58, 0.8),
+//         rgba(47, 48, 58, 0.8)
+//       ),
+//       url(../../../images/images_studio/Header2x.jpg);
+//   }
+// }
 
 .banner-title {
   margin-top: 0px;
