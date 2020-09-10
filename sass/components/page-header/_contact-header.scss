@@ -27,7 +27,7 @@
 
   font-weight: 500;
   font-size: 14px;
-  line-height: 16px;
+  line-height: 1, 14;
   letter-spacing: 0.02em;
 
   @media screen and (max-width: 1200px) {
@@ -38,8 +38,12 @@
     letter-spacing: 0.02em;
   }
 
-  @media screen and (max-width: 1200px) {
+  @media screen and (max-width: 767px) {
     margin-left: 10px;
+
+    font-size: 18px;
+    line-height: 1.16;
+    letter-spacing: 0.02em;
   }
 }
 

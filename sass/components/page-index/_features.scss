@@ -24,6 +24,13 @@
   }
 }
 
+@media screen and (max-width: 1200px) {
+  .features {
+    padding-top: 60px;
+    padding-bottom: 30px;
+  }
+}
+
 .features-list {
   display: flex;
   justify-content: space-between;
@@ -62,11 +69,6 @@
 @media screen and (max-width: 767px) {
   .features-list {
     justify-content: center;
-
-    // & .item {
-    //   width: auto;
-    //   max-width: 450px;
-    // }
   }
 }
 

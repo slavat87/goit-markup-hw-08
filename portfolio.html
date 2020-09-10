@@ -113,20 +113,24 @@
             <li class="item">
               <a href="#">
                 <div class="portfolio-img">
-                  <img
-                    srcset="
-                      ./images/images_portfolio/technokrak.jpg   1x,
-                      ./images/images_portfolio/technokrak2x.jpg 2x
-                    "
-                    src="./images/images_portfolio/technokrak.jpg"
-                    alt="Техно"
-                  />
-
+                  <picture>
+                    <!-- <source 
+                      srcset="
+                        ./images/images_studio/technokrak354.jpg 1x,
+                        ./images/images_studio/technokrak3542x.jpg 2x" 
+                      media="(max-width: 1200px)" /> -->
+                    <img 
+                      srcset="
+                        ./images/images_portfolio/technokrak.jpg   1x,
+                        ./images/images_portfolio/technokrak2x.jpg 2x"
+                      src="./images/images_portfolio/technokrak.jpg" 
+                      alt="Техно" />
+                  </picture>
                   <p class="portfolio-description">
                     Технокряк це сучасний майданчик поширення коронавіруса.
                     Компанії використовують цю платформу для цифрового
                     шпигунства і атак на захищені сервера конкурентів.
-                  </p>
+                  </picture>
                 </div>
 
                 <div class="desk">

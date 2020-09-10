@@ -13,6 +13,17 @@
   }
 }
 
+@media screen and (max-width: 1200px) {
+  .team {
+    padding-top: 60px;
+    padding-bottom: 30px;
+
+    & h2 {
+      margin-bottom: 30px;
+    }
+  }
+}
+
 .team-list {
   display: flex;
   justify-content: space-between;
@@ -94,10 +105,16 @@
   margin-bottom: 50px;
 }
 
-/* .team-social a:hover {
-  background-color: $accent-color;
-  color: $second-text-color;
-} */
+@media screen and (max-width: 1200px) {
+  .team h2 {
+    margin-top: 0;
+    margin-bottom: 30px;
+
+    font-size: 28px;
+    line-height: 1.18;
+    letter-spacing: 0.03em;
+  }
+}
 
 .team-icon {
   width: 20px;
@@ -131,10 +148,3 @@
     }
   }
 }
-
-// @media screen and (max-width: 767px) {
-//   .team-list .social {
-//     padding-left: 122px;
-//     padding-right: 122px;
-//   }
-// }
