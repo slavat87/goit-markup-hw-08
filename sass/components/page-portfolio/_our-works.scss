@@ -1,4 +1,11 @@
 .our-works {
-  padding-top: 93px;
-  padding-bottom: 64px;
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+@media screen and (max-width: 1200px) {
+  .our-works {
+    padding-top: 60px;
+    padding-bottom: 30px;
+  }
 }
