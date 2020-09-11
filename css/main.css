@@ -1478,6 +1478,8 @@ strong {
       -ms-flex-pack: center;
           justify-content: center;
   margin-left: auto;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
 }
