@@ -1406,7 +1406,7 @@ strong {
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  width: 528px;
+  max-width: 528px;
   max-height: 90vh;
   overflow-y: auto;
   padding: 32px 32px 40px 32px;
@@ -1521,10 +1521,11 @@ strong {
 }
 
 .form-field input {
-  /* box-sizing: border-box; */
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   width: 448px;
   height: 40px;
-  padding: 12px 42px;
+  padding: 0 42px;
   margin-top: 4px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
