@@ -1,37 +1,42 @@
 @charset "UTF-8";
 @font-face {
   font-family: "Raleway";
+  src: url("../../fonts/Raleway-Bold.woff2") format("woff2"), url("../../fonts/Raleway-Bold.woff") format("woff");
+  font-weight: bold;
   font-style: normal;
-  font-weight: 700;
-  src: local(""), url("./../../fonts/raleway-v17-latin-700.woff2") format("woff2"), url("./../../fonts/raleway-v17-latin-700.woff") format("woff");
+  font-display: swap;
 }
 
 @font-face {
   font-family: "Roboto";
-  font-style: normal;
-  font-weight: 400;
-  src: local("Roboto"), local("Roboto-Regular"), url("./../../fonts/roboto-v20-latin-regular.woff2") format("woff2"), url("./../../fonts/roboto-v20-latin-regular.woff") format("woff");
-}
-
-@font-face {
-  font-family: "Roboto";
-  font-style: normal;
+  src: url("../../fonts/Roboto-Medium.woff2") format("woff2"), url("../../fonts/Roboto-Medium.woff") format("woff");
   font-weight: 500;
-  src: local("Roboto Medium"), local("Roboto-Medium"), url("./../../fonts/roboto-v20-latin-500.woff2") format("woff2"), url("./../../fonts/roboto-v20-latin-500.woff") format("woff");
+  font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
   font-family: "Roboto";
+  src: url("../../fonts/Roboto-Bold.woff2") format("woff2"), url("../../fonts/Roboto-Bold.woff") format("woff");
+  font-weight: bold;
   font-style: normal;
-  font-weight: 700;
-  src: local("Roboto Bold"), local("Roboto-Bold"), url("./../../fonts/roboto-v20-latin-700.woff2") format("woff2"), url("./../../fonts/roboto-v20-latin-700.woff") format("woff");
+  font-display: swap;
 }
 
 @font-face {
   font-family: "Roboto";
+  src: url("../../fonts/Roboto-Regular.woff2") format("woff2"), url("../../fonts/Roboto-Regular.woff") format("woff");
+  font-weight: normal;
   font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("../../fonts/Roboto-Black.woff2") format("woff2"), url("../../fonts/Roboto-Black.woff") format("woff");
   font-weight: 900;
-  src: local("Roboto Black"), local("Roboto-Black"), url("./../../fonts/roboto-v20-latin-900.woff2") format("woff2"), url("./../../fonts/roboto-v20-latin-900.woff") format("woff");
+  font-style: normal;
+  font-display: swap;
 }
 
 html {
@@ -161,6 +166,12 @@ a {
   border-bottom: 1px solid #ececec;
 }
 
+@media screen and (max-width: 767px) {
+  .page-header .container {
+    max-width: 100%;
+  }
+}
+
 .nav-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -225,6 +236,7 @@ a {
   margin-top: 10px;
   margin-bottom: 10px;
   padding: 0;
+  outline: none;
   border: none;
   background-color: transparent;
   fill: currentColor;
@@ -459,6 +471,12 @@ a {
 }
 
 .contact a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   color: #757575;
   -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
