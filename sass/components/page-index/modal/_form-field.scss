@@ -47,6 +47,13 @@
   color: $third-text-color;
 }
 
+@media screen and (max-width: 767px) {
+  .form-field input:hover label,
+  .form-field input:focus label {
+    color: #2196f3;
+  }
+}
+
 .form-icon {
   position: absolute;
   top: 70%;
