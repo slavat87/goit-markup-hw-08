@@ -285,6 +285,7 @@ a {
     text-align: center;
     width: calc(100% + 30px);
     margin-left: -15px;
+    z-index: 1;
   }
 }
 
@@ -1412,6 +1413,8 @@ strong {
   padding: 32px 32px 40px 32px;
   margin-left: auto;
   margin-right: auto;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   background: #ffffff;
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
