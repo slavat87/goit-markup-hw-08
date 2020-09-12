@@ -1808,7 +1808,6 @@ strong {
         -ms-flex-pack: start;
             justify-content: flex-start;
     margin-bottom: 25px;
-    margin-right: 80px;
   }
   .portfolio-nav .item {
     margin-bottom: 15px;
@@ -1948,6 +1947,12 @@ strong {
   /*opacity: 1;*/
   -webkit-transform: translateY(0);
           transform: translateY(0);
+}
+
+@media screen and (max-width: 479px) {
+  .portfolio .portfolio-description {
+    font-size: 14px;
+  }
 }
 
 .portfolio .desk {

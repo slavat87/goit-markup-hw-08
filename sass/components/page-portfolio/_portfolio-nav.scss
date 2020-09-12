@@ -17,16 +17,16 @@
   }
 }
 
-@media screen and (max-width: 767px) {
-  .portfolio-nav {
-  }
-}
+// @media screen and (max-width: 767px) {
+//   .portfolio-nav {
+//   }
+// }
 
 @media screen and (max-width: 767px) {
   .portfolio-nav {
     justify-content: flex-start;
     margin-bottom: 25px;
-    margin-right: 80px;
+    // margin-right: 80px;
 
     & .item {
       margin-bottom: 15px;

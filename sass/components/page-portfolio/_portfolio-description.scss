@@ -28,3 +28,9 @@
   /*opacity: 1;*/
   transform: translateY(0);
 }
+
+@media screen and (max-width: 479px) {
+  .portfolio .portfolio-description {
+    font-size: 14px;
+  }
+}
